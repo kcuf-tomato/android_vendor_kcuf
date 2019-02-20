@@ -269,7 +269,8 @@ PRODUCT_PACKAGES += \
     SwitchStock \
     Contained \
     Retro \
-    Narrow
+    Narrow \
+    SwitchTelegram
 
 # Icon Shapes
 include vendor/stag/config/iconshapes.mk
