@@ -17,5 +17,8 @@
     <color name="qs_tile_background_inactive">#4f4f4f</color>
     <color name="qs_tile_icon_active">@*android:color/black</color>
     <color name="qs_tile_icon_inactive">#cbcbcb</color>
+    <!-- Gradient Shit -->
+    <color name="gradient_start">@*android:color/gradient_start_dark</color>
+    <color name="gradient_end">@*android:color/gradient_end_dark</color>
 
 </resources>
