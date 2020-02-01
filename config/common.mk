@@ -42,20 +42,6 @@ else
         SELINUX_IGNORE_NEVERALLOWS := true
 endif
 
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/stag/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/stag/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/stag/prebuilt/common/bin/50-stag.sh:system/addon.d/50-stag.sh \
-    vendor/stag/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-
-ifneq ($(AB_OTA_PARTITIONS),)
-PRODUCT_COPY_FILES += \
-    vendor/stag/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/stag/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/stag/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
-endif
-
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/stag/prebuilt/common/etc/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
@@ -88,4 +74,3 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # APN
 PRODUCT_PACKAGES += \
     apns-conf.xml
-
