@@ -42,6 +42,10 @@ else
         SELINUX_IGNORE_NEVERALLOWS := true
 endif
 
+# Permissions
+    vendor/stag/prebuilt/common/etc/permissions/privapp-permissions-stag-system.xml:system/etc/permissions/privapp-permissions-stag.xml \
+    vendor/stag/prebuilt/common/etc/permissions/privapp-permissions-stag-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-stag.xml \
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/stag/prebuilt/common/etc/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
@@ -54,10 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/stag/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
     vendor/stag/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
-
-# Google Assistant
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.opa.eligible_device=true
 
 # Google permissions
 PRODUCT_COPY_FILES += \
