@@ -263,5 +263,13 @@ PRODUCT_PACKAGES += \
     QStileTriangles \
     QStileCircleOutline
 
+# Switch themes
+PRODUCT_PACKAGES += \
+    SwitchOnePlus \
+    SwitchStock \
+    Contained \
+    Retro \
+    Narrow
+
 # Icon Shapes
 include vendor/stag/config/iconshapes.mk
