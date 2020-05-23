@@ -111,13 +111,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # APN
 PRODUCT_PACKAGES += \
     apns-conf.xml
-
-ifneq ($(TARGET_USES_PREBUILT_CAMERA_SERVICE), true)
-PRODUCT_SOONG_NAMESPACES += \
-    frameworks/av/camera/cameraserver \
-    frameworks/av/services/camera/libcameraservice
-endif
-
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
