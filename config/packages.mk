@@ -62,28 +62,8 @@ PRODUCT_PACKAGES += \
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
-    SystemPitchBlackOverlay \
-    SystemUIPitchBlackOverlay \
-    SystemDarkGrayOverlay \
-    SystemUIDarkGrayOverlay \
-    SystemStyleOverlay \
-    SystemUIStyleOverlay \
-    SystemNightOverlay \
-    SystemUINightOverlay \
-    SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay \
-    PrimaryColorOceanOverlay \
-    PrimaryColorNatureOverlay \
-    PrimaryColorDarkBlueOverlay \
-    PrimaryColorEyeSootherOverlay \
-    PrimaryColorClearOverlay \
-    PrimaryColorAlmostBlackOverlay \
-    PrimaryColorCharcoalBlackOverlay \
-    PrimaryColorLeadBlackOverlay \
-    PrimaryColorSolarizedDarkOverlay \
-    PrimaryFlameOverlay \
-    PrimaryColorOneplusDarkOverlay
-
+    PrimaryBakedGreen \
+    PrimaryPitchBlack \
 
 # Extra tools
 PRODUCT_PACKAGES += \
