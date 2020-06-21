@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     Lawnchair
 endif
 
+# Themes stub
+PRODUCT_PACKAGES += \
+    stagThemesStub
+
 # Accents
 PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
@@ -67,7 +71,19 @@ PRODUCT_PACKAGES += \
     SystemNightOverlay \
     SystemUINightOverlay \
     SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay
+    SystemUISolarizedDarkOverlay \
+    PrimaryColorOceanOverlay \
+    PrimaryColorNatureOverlay \
+    PrimaryColorDarkBlueOverlay \
+    PrimaryColorEyeSootherOverlay \
+    PrimaryColorClearOverlay \
+    PrimaryColorAlmostBlackOverlay \
+    PrimaryColorCharcoalBlackOverlay \
+    PrimaryColorLeadBlackOverlay \
+    PrimaryColorSolarizedDarkOverlay \
+    PrimaryFlameOverlay \
+    PrimaryColorOneplusDarkOverlay
+
 
 # Extra tools
 PRODUCT_PACKAGES += \
