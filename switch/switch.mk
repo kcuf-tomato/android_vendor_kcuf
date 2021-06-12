@@ -8,4 +8,4 @@ PRODUCT_PACKAGES += \
     Retro \
     MD2 \
     Stockish \
-    Gradient
+#    Gradient
